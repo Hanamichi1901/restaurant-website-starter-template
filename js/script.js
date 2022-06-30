@@ -12,7 +12,6 @@ window.addEventListener("load", function(){
 
 // Audio
 var audio = document.getElementById("audio");
-var playpausebtn = document.getElementById("playpausebtn");
 var count = 0;
 
 function playpause(){
@@ -42,7 +41,6 @@ document.addEventListener("scroll", handleScroll);
 var scrollToTopBtn = document.querySelector(".button-ontop");
 function handleScroll() {
   var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var GOLDEN_RATIO = 0.5;
 }
 
 scrollToTopBtn.addEventListener("click", scrollToTop);
@@ -50,7 +48,6 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
   });
 }
 
